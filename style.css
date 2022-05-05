@@ -1,0 +1,132 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    box-shadow: 0 4px 13px -3px rgb(0 0 0 / 10%);
+}
+
+.header-superior {
+    border-width: 10px 0 0;
+    border-top-style: solid;
+    border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
+    padding: 5px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .header-superior {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.header-nav-caja {
+    order: -1;
+}
+
+@media (min-width: 768px) {
+    .header-nav-caja {
+        order: 0;
+    }
+}
+
+/* HEADER NAV */
+.header-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.header-nav-link {
+    padding: 4px;
+    text-decoration: none;
+    color: #000;
+}
+
+/* HEADER MID */
+.header-mid {
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-mid-logo {
+    width: 70px;
+}
+
+.header-mid-caja-buscador {
+    flex-grow: 1;
+    display: flex;
+}
+
+.header-mid-buscador-input {
+    padding: 16px;
+    font-family: monospace;
+    border: none;
+    background-color: #f2f2f2;
+    flex-grow: 1;
+}
+
+.header-mid-buscador-submit {
+    color: white;
+    background-color: #000000;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header-mid-buscador-input {
+    border: 1px solid transparent;
+}
+.header-mid-buscador-input:focus {
+    border: 1px solid #000000;
+    outline: none;
+}
+
+.header-mid-login-button-up,
+.header-mid-login-button-in {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    padding: 12px;
+}
+
+.header-mid-login-button-up:hover,
+.header-mid-login-button-in:hover {
+    color: #e0e0e0;
+}
+
+.header-mid-login-button-up {
+    border: 1px solid #e0e0e0;
+}
+
+/* WRAPPER */
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    padding-top: 24px;
+}
+
+.contenido-caja {
+    display: flex;
+}
+
+.contenido-caja-principal {
+    flex-basis: 60%;
+}
+
+.contenido-caja-aside {
+    flex-basis: 40%;
+}
